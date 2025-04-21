@@ -52,7 +52,7 @@
 #include <math.h>
 #include <string.h>
 
-#include "../glfw-2.7.9/include/GL/glfw.h"
+#include "GL/glfw.h"
 
 
 

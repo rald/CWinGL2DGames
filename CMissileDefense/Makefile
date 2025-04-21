@@ -1,16 +1,5 @@
-CC=gcc
-INCS=-I.
-LIBS=-L.
-OBJS=main.o gl2d.o utils.o list.o turret.o missile.o explosion.o building.o
-EXE=game
-
-%.o: %.c %.h
-	$(CC) -c -o $@ $< $(INCS) -Wall -g
-
-$(EXE): $(OBJS)
-	$(CC) $(OBJS) -o $(EXE) $(LIBS) -lglfw -lGL -lGLU -lX11 -lXrender -lXi -lXext -lXdamage -lXrandr -lXxf86vm -lm -lpthread -Wall -g
+game.e: main.c utils.c list.c turret.c missile.c explosion.c building.c
+	gcc main.c utils.c list.c turret.c missile.c explosion.c building.c -o game.exe -I. -L. -I ../glfw/include -L ../glfw/lib -I gl2d/include -L gl2d/lib -lgl2d -lglfw -lopengl32 -lglu32
 
 clean:
-	rm $(OBJS) $(EXE)
-
-.PHONY: clean
+	del game.exe

@@ -4,8 +4,8 @@
 #include <time.h>
 #include <math.h>
 
-#include "../glfw-2.7.9/include/GL/glfw.h"
-#include "gl2d.h"
+#include "GL/glfw.h"
+#include "GL/gl2d.h"
 
 #include "utils.h"
 #include "list.h"

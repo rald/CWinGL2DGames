@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-#include "gl2d.h"
+#include "GL/gl2d.h"
 
 extern int mouseX,mouseY;
 

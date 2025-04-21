@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "gl2d.h"
+#include "GL/gl2d.h"
 
 typedef struct Building Building;
 struct Building {
